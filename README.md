@@ -1,20 +1,20 @@
-# README
+## Dependencies
+You can also look in the Gemfile and package.json
 
-
-* Ruby version
-
-## Ruby Gem Dependencies
-You can also look in the Gemfile
-* Faraday
-
-
-
-## Dependencies 
+### Faraday Install
 ```exec
-bundle install
-    - install bundler (https://bundler.io/)
-    * gem install bundler 
-yarn install 
-    -install Yarn (https://classic.yarnpkg.com/en/docs/install/#windows-stable)
-    * npm install --global yarn (opt: --global)
+gem install faraday
 ```
+
+### Bundler Install
+```exec
+    * gem install bundler 
+    * https://bundler.io/
+```
+### Yarn Install 
+```exec
+    * npm install --global yarn (opt: --global)
+    * https://classic.yarnpkg.com/en/docs/install/#windows-stable
+```
+### Owl Carousel (incuded in project files)
+https://owlcarousel2.github.io/OwlCarousel2/
