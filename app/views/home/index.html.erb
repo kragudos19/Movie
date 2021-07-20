@@ -1,2 +1,87 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<button type="button" id="jsSetFocus"></button>
+<div class="title-container row">
+    <h1 class="title">Top of 2019</h1>
+</div>
+<div class="carousel-container row stretch">
+    <div class="owl-carousel" data-nav="1">
+        <%for movie in @top_2019_list%>
+        <div class="carousel-item jsNavigate" data-movie="<%=movie['Title']%>" >
+            <a href="http://google.com" tabindex="2" ><img src="<%=movie['Poster']%>" alt="<%=movie['Title']%>" class="responsive-img"/></a>
+        </div>
+        <%end%>
+    </div>
+</div>
+<div class="title-container row">
+    <h1 class="title">Top of 2018</h1>
+</div>
+<div class="carousel-container row stretch">
+    <div class="owl-carousel" data-nav="2">
+        <%for movie in @top_2018_list%>
+        <div class="carousel-item jsNavigate" data-movie="<%=movie['Title']%>">
+            <a href=""><img src="<%=movie['Poster']%>" alt="<%=movie['Title']%>" class="responsive-img"/></a>
+        </div>
+        <%end%>
+    </div>
+</div>
+<div class="title-container row">
+    <h1 class="title">Mystery</h1>
+</div>
+<div class="carousel-container row stretch">
+    <div class="owl-carousel" data-nav="3">
+        <%for movie in @mystery_list%>
+        <div class="carousel-item jsNavigate" data-movie="<%=movie['Title']%>">
+            <a href=""><img src="<%=movie['Poster']%>" alt="<%=movie['Title']%>" class="responsive-img"/></a>
+        </div>
+        <%end%>
+    </div>
+</div>
+<div class="title-container row">
+    <h1 class="title">Drama</h1>
+</div>
+<div class="carousel-container row stretch">
+    <div class="owl-carousel" data-nav="4">
+        <%for movie in @drama_list%>
+        <div class="carousel-item jsNavigate" data-movie="<%=movie['Title']%>">
+            <a href=""><img src="<%=movie['Poster']%>" alt="<%=movie['Title']%>" class="responsive-img"/></a>
+        </div>
+        <%end%>
+    </div>
+</div>
+<div class="title-container row">
+    <h1 class="title">Action</h1>
+</div>
+<div class="carousel-container row stretch">
+    <div class="owl-carousel" data-nav="5">
+        <%for movie in @action_list%>
+        <div class="carousel-item jsNavigate" data-movie="<%=movie['Title']%>">
+            <a href=""><img src="<%=movie['Poster']%>" alt="<%=movie['Title']%>" class="responsive-img"/></a>
+        </div>
+        <%end%>
+    </div>
+</div>
+<div class="title-container row">
+    <h1 class="title">Thriller</h1>
+</div>
+<div class="carousel-container row stretch">
+    <div class="owl-carousel" data-nav="6">
+        <%for movie in @thriller_list%>
+        <div class="carousel-item jsNavigate" data-movie="<%=movie['Title']%>">
+            <a href=""><img src="<%=movie['Poster']%>" alt="<%=movie['Title']%>" class="responsive-img"/></a>
+        </div>
+        <%end%>
+    </div>
+</div>
+<div class="title-container row">
+    <h1 class="title">Fantasy</h1>
+</div>
+<div class="carousel-container row stretch">
+    <div class="owl-carousel" data-nav="7">
+        <%for movie in @fantasy_list%>
+        <div class="carousel-item jsNavigate" data-movie="<%=movie['Title']%>">
+            <a href=""><img src="<%=movie['Poster']%>" alt="<%=movie['Title']%>" class="responsive-img"/></a>
+        </div>
+        <%end%>
+    </div>
+</div>
+
+

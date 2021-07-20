@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
 
 * Ruby version
 
-* System dependencies
+## Ruby Gem Dependencies
+You can also look in the Gemfile
+* Faraday
 
-* Configuration
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Dependencies 
+```exec
+bundle install
+    - install bundler (https://bundler.io/)
+    * gem install bundler 
+yarn install 
+    -install Yarn (https://classic.yarnpkg.com/en/docs/install/#windows-stable)
+    * npm install --global yarn (opt: --global)
+```

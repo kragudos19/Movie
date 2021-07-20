@@ -6,13 +6,24 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <%= stylesheet_link_tag 'application', "https://unpkg.com/sanitize.css" %>
+    <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap' %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'owl-carousel', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'owl-theme-default', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'vendor/owl-carousel', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'home', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <%= yield %>
+    <div class="page">
+      <%= yield %>
+    </div>
   </body>
 </html>
